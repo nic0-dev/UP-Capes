@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/sun-and-moon.png">
+    <title>UP Capes IT Assessment</title>
+</head>
+
+<body>
+    <a href="#sign-in"></a>
+    <div class="section">
+        <div class="navbar padding-all">
+            <a href="" class="brand">Mark Cagas</a>
+            <div class="navbar-container">
+                <a href="#" class="navbar-link">Home</a>
+                <a href="#" class="navbar-link">About</a>
+                <a href="#" class="navbar-link">Contact</a>
+                <a href="#sign-in" class="button yellow">Join Now</a>
+            </div>
+        </div>
+        <div class="home padding">
+            <div class="content">
+                <h1 class="heading">IT Committee <span class="text-span">Skills</span> Test Assessment</h1>
+                <p class="description margin-vertical">Click the "Get Started" or "Join Now" Button to navigate to the Sign In Form.</p>
+                <div class="button-row">
+                    <a href="#sign-in" class="button purple margin-none">Get Started</a>
+                    <a href="#" class="button white">Learn More</a>
+                </div>
+            </div>
+            
+        </div>
+        <img class="image" src="assets/laptop.png" alt="Laptop" loading="lazy">
+    </div>
+    <div class="section sign-in" id="sign-in">
+        <div class="navbar2 padding-all">
+            <a href="#" class="brand white">Mark Cagas</a>
+            <div class="navbar-container">
+                <a href="#" class="navbar-link white">Home</a>
+                <a href="#" class="navbar-link white">About</a>
+                <a href="#" class="navbar-link white">Contact</a>
+                <a href="#sign-in" class="button yellow">Join Now</a>
+            </div>
+        </div>
+        <img src="assets/trophy.png" loading="lazy" sizes="40vw" alt="tropy" class="sign-in-image">
+        <a href="#" class="scroll-top" id="scroll-top" onClick="toTop()"><i class="fa fa-angle-up" style="font-size:36px;"></i></a>
+        <div class="sign-in-content">
+            <div class="sign-in-left">
+                <h1 class="heading white">Baby baby you&#x27;re my <span class="text-span-2">sun</span> and <span class="text-span-2">moon</span></h1>
+                <p class="margin-vertical white">Girl, you&#x27;re everything between. A lot of pretty faces could waste my time, but you're my dream girl.<br><br> You make flowers bloom. Girl, you make the stars collide. And I don't know what I did to get lucky like this, but it sure feels fine. </p>
+                
+            </div>
+            <div class="sign-in-right">
+                <div class="sign-in-card">
+                    <div class="sign-in-form"> 
+                        <form id="account-form" name="user-form" data-name="User Form" method="get">
+                            <h2 class="sign-in-title">Welcome back</h2>
+                            <div class="sign-in-description">Welcome back! Please enter your details</div>
+                            <label for="Username" class="sign-in-label">Username</label><br>
+                            <input type="text" id="Username" class="sign-in-field" placeholder="Enter your username" required><br>
+                            <label for="Password" class="sign-in-label">Password</label><br>
+                            <input type="password" id="Password" class="sign-in-field" placeholder="Password" required>
+                            <div class="sign-in-row">
+                                <label class="sign-in-label"><input type="checkbox" name="Checkbox" data-name="Checkbox" for="Checkbox">Remember me</label>
+                                <a href="#" class="sign-in-password">Forgot Password?</a>
+                            </div>
+                            <input id="login" type="submit" value="Submit" class="sign-in-button" onClick="validateForm(this.form)">
+                            <a href="#" class="sign-in-button google"><img src="assets/google_logo.svg" loading="lazy" class="google-logo"><div>Sign In with Google</div></a>
+                        </form>
+                        <div id="sign-in-success" class="sign-in-success">
+                            <div class="sign-in-success-title">Success</div>
+                            <div class="sign-in-description">You have successfully logged in!</div>
+                            <a href="#" class="sign-in-button success">Continue</a>
+                        </div>
+                        <div id="error-message" class="error-message">
+                            <div>Try Again</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
